@@ -23,15 +23,15 @@
 
 //  ------ Перетворення псевдомасиву -----------------------
 
-function fn(...args) {
-  // Змінна args буде містити повноцінний масив
-  let total = 1;
-  for (const arg of args) {
-    total *= arg;
-  }
-  return total;
-}
-console.log(fn(1, 2, 3)); //  6
-console.log(fn(1, 2, 3, 4)); //  24
-console.log(fn(1, 2, 3, 4, 5)); //  120
+// function fn(...args) {
+//   // Змінна args буде містити повноцінний масив
+//   let total = 1;
+//   for (const arg of args) {
+//     total *= arg;
+//   }
+//   return total;
+// }
+// console.log(fn(1, 2, 3)); //  6
+// console.log(fn(1, 2, 3, 4)); //  24
+// console.log(fn(1, 2, 3, 4, 5)); //  120
 // =================================================

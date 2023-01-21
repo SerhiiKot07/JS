@@ -1,26 +1,26 @@
-const hours = 14;
-const minutes = 26;
-let timestring;
+// const hours = 14;
+// const minutes = 26;
+// let timestring;
 
-if (minutes > 0) {
-  timestring = `${hours} г. ${minutes} хв.`;
-} else {
-  timestring = `${hours} г.`;
-}
-console.log(timestring);
+// if (minutes > 0) {
+//   timestring = `${hours} г. ${minutes} хв.`;
+// } else {
+//   timestring = `${hours} г.`;
+// }
+// console.log(timestring);
 
-// ---------------------------------------->
+// // ---------------------------------------->
 
-let link = "https://somesite.com/about";
-if (link.includes("my-site") && !link.endsWith("/")) {
-  link += "/";
-}
-console.log(link);
+// let link = "https://somesite.com/about";
+// if (link.includes("my-site") && !link.endsWith("/")) {
+//   link += "/";
+// }
+// console.log(link);
 
-// ---------------------------------------
+// // ---------------------------------------
 
-const type = typeof "4";
-console.log(type);
+// const type = typeof "4";
+// console.log(type);
 
 // ---------------------------------------
 // - Ввод користувача
@@ -38,20 +38,164 @@ console.log(type);
 // console.log(typeof quantityB);
 
 // --------------------- parseInt()
-let elementWidth = "50px";
-elementWidth = parseInt(elementWidth);
-console.log(elementWidth); // 50
-console.log(typeof elementWidth); // number
+// let elementWidth = "50px";
+// elementWidth = parseInt(elementWidth);
+// console.log(elementWidth); // 50
+// console.log(typeof elementWidth); // number
 
-// ------------------ parseFloat()
-let elementHeigth = "123.123456px";
-elementHeigth = parseFloat(elementHeigth);
-console.log(elementHeigth); // 123.123456
-console.log(typeof elementHeigth); // number
+// // ------------------ parseFloat()
+// let elementHeigth = "123.123456px";
+// elementHeigth = parseFloat(elementHeigth);
+// console.log(elementHeigth); // 123.123456
+// console.log(typeof elementHeigth); // number
 
-// ----------------- .toFixed() - кільсть символів після крапки, округлює
-let salary = 130.164756789;
-salary = Number(salary.toFixed(3));
-console.log(salary);
+// // ----------------- .toFixed() - кільсть символів після крапки, округлює
+// let salary = 130.164756789;
+// salary = Number(salary.toFixed(3));
+// console.log(salary);
 
 // -----------------------
+// ==================================================================================
+
+// ПРАКТИЧНЕ ЗАНЯТТЯ 21.01.2023 ==========================================
+
+// Напишіть код, який запитуватиме
+// логін за допомогою prompt і буде виводити результат
+// в консоль браузера
+
+// Якщо користувач вводить "Admin",
+// то prompt запитує пароль.
+// Якщо нічого не ввели або натиснута клавіша Esc
+// вивести рядок "Cancel"
+// Інакше вивести рядок "I don't know you"
+
+//Пароль перевіряти так:
+// Якщо введено пароль "I am admin",
+// то вивести рядок "Hello!"
+// інакше виводити рядок "Wrong password!"
+
+// =====================================================================================
+
+// Напишіть через світч пошук автора мови програмування
+// Пишемо назву мови у шаблонному рядку отримує відповідь: мова та автор
+// PHP Расмус Лердорф
+// C# група інженерів компанії Microsoft під керівництвом Андерса Хейлсберга та Скотта Вільтаумота
+// Swift Кріс Латтнер
+// JS Брендан Ейх
+// Java Джеймс Гослінг
+// Python Гвідо ван Россум
+
+// ======================================================
+
+// Напишіть через світч калькулятор
+// Потрібно ввести перше число в prompt, потім математичну операцію
+// Тоді ввести наступне число
+
+// ==============================================================
+
+//Напишіть цикл, який виводить у консоль
+//1. числа від max до min за спаданням
+//2. Виведіть у консоль усіх парні числа від min до max
+//3. За допомогою циклу for додайте всі парні числа від min до max
+//const max = 90;
+//const min = 33;
+
+// =================================================
+
+// Напишіть програму, щоб обертати рядок введений в propmt у зворотньому напрямку
+// При цьому потрібно залишити першу літеру на своєму місці
+
+// const word = prompt("enter word");
+
+// let reverceWord = "";
+
+// for (let i = word.length - 1; i > 0; i -= 1) {
+//   const letter = word[i];
+//   console.log(letter);
+//   reverceWord += letter;
+// }
+
+// const firstLetter = word[0];
+
+// console.log(firstLetter + reverceWord);
+
+// console.log(word.split("").reverse().join(""));
+
+// ===========================================================
+
+// При завантаженні сторінки користувачеві пропонується
+// в prompt ввести число. Після введення число додається до значення
+// змінної total.
+// Операція введення числа продовжується доти,
+// поки користувач не натисне кнопку Cancel в prompt.
+
+// Після того як користувач припинив введення, натиснувши на
+// кнопку Cancel, показати console.log з рядком "Загальна сума введених чисел дорівнює [число]."
+
+// Зробити перевірку, що користувач ввів саме число,
+// а не довільний набір символів.
+
+// let number = prompt("Enter number");
+// let total = 0;
+
+// while (number !== null) {
+//   if (!isNaN(Number(number))) {
+//     total += Number(number);
+//   }
+
+//   // total += Number(number);
+//   number = prompt("Enter number");
+// }
+
+// console.log(total);
+
+// ======================================================================
+
+// Напишіть цикл, який пропонує ввести
+// число більше 100 через prompt.
+// Якщо користувач ввів інше число - попросити
+// ввести ще раз і так далі.
+// Цикл повинен запитувати число, поки користувач не
+// введе число більше 100, або натисне кнопку
+// Скасування в prompt
+
+// ========================================================================
+
+// За кожен місяць податкова нараховує на ЗП розробника 5% від суми.
+// Напишіть консольну функцію, на яку користувач вводить суму зп
+// і кількість місяців з допомогою prompt() не забуваємо, що промпт повертає рядок.
+// А податкова обчислює кінцеву суму зп без податків,
+// Суму податків всього і чистий дохід розробника за кожен місяць.
+// Для обчислення суми з урахуванням відсотків використовуйте цикл for.
+
+// const salary = 1000;
+// const tax = 0.05;
+// let fullSalary = 0;
+// let fullTax = 0;
+// const period = 12;
+
+// for (let i = 0; i < period; i += 1) {
+//   fullSalary += salary - salary * tax;
+//   fullTax += salary - salary * (1 - tax);
+// }
+// console.log(fullSalary);
+// console.log(fullTax);
+
+// ============================================================================
+
+// Напишіть програму для перевірки чи є число простим чи ні
+
+// const number = prompt("Веедите число");
+// let isPrime = true;
+
+// for (let i = 2; i < number; i += 1) {
+//   if (number % i === 0) {
+//     isPrime = false;
+//     break;
+//   }
+// }
+
+// console.log(number);
+// console.log(isPrime);
+
+// ==================================================================================
